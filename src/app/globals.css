@@ -1,26 +1,83 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-calibre: 'Calibre', system-ui, sans-serif;
+    --color-navy: #0a192f;
+    --color-navy-light: #112240;
+    --color-navy-lightest: #233554;
+    --color-slate: #8892b0;
+    --color-slate-light: #a8b2d1;
+    --color-slate-lightest: #ccd6f6;
+    --color-white: #e6f1ff;
+    --color-green: #64ffda;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-navy text-slate-lightest antialiased;
+    background-color: var(--color-navy);
+    color: var(--color-slate-lightest);
+    font-family: var(--font-calibre);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-slate-lightest);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  section {
+    @apply mb-32;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .nav-link {
+    @apply text-slate hover:text-green transition-colors duration-300 font-mono text-sm;
+  }
+
+  .section-heading {
+    @apply text-heading-md font-bold mb-6 text-slate-lightest;
+    letter-spacing: 0.1em;
+  }
+
+  .card {
+    @apply bg-navy-light p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-all duration-300 border border-navy-lightest text-slate-lightest;
+  }
+
+  .btn {
+    @apply px-6 py-3 border-2 border-green text-green rounded transition-colors duration-300 font-mono text-sm;
+    background: transparent;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  .btn:hover, .btn:focus {
+    background: rgba(100,255,218,0.1);
+    color: var(--color-green);
+    border-color: var(--color-green);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy-light);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy-lightest);
 }

@@ -2,102 +2,145 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      {/* Hero Section */}
+      <section className="flex" style={{ minHeight: '100vh', alignItems: 'center', padding: '0 2rem' }}>
+        <div className="max-w-4xl">
+          <p className="text-green mb-4">Hi, my name is</p>
+          <h1 style={{ fontSize: '4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-slate-lightest)' }}>
+            Deepesh N.
+          </h1>
+          <h2 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-slate-light)' }}>
+            I build AI & ML solutions.
+          </h2>
+          <p className="text-slate mb-8" style={{ maxWidth: '40rem' }}>
+            I'm a Computer Science Engineer specializing in AI and ML, passionate about leveraging technology to drive impactful solutions. 
+            Currently focused on developing innovative machine learning models and intelligent systems.
+          </p>
+          <div className="flex gap-4">
+            <a href="#work" className="btn">View My Work</a>
+            <a href="mailto:ndeepesh2004@gmail.com" className="btn">Contact Me</a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="px-6 py-20">
+        <h2 className="section-heading">About Me</h2>
+        <div className="grid grid-2">
+          <div className="text-slate">
+            <p className="mb-4">
+              I'm a Computer Science Engineer with a specialization in AI and ML, currently pursuing my B.Tech at SRM University with an impressive CGPA of 9.55/10.
+            </p>
+            <p className="mb-4">
+              My expertise spans across machine learning, software development, and IoT, with a particular focus on developing innovative solutions that make a real impact.
+            </p>
+            <p className="mb-4">
+              I'm passionate about leveraging cutting-edge technologies to solve complex problems and create intelligent systems that drive positive change.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>Skills</h3>
+            <div className="grid grid-2 gap-4">
+              <div>
+                <h4 className="text-green mb-2">Languages</h4>
+                <p className="text-slate">Python, C++, C, Java, SQL</p>
+              </div>
+              <div>
+                <h4 className="text-green mb-2">Technologies</h4>
+                <p className="text-slate">TensorFlow, Docker, Google Vision API, Azure IoT, AWS</p>
+              </div>
+              <div>
+                <h4 className="text-green mb-2">Tools</h4>
+                <p className="text-slate">Git, VS Code, PostgreSQL, Orange, Spyder</p>
+              </div>
+              <div>
+                <h4 className="text-green mb-2">Certifications</h4>
+                <p className="text-slate">Oracle Cloud, AWS ML, NPTEL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="bg-navy-light py-20 px-6">
+        <h2 className="section-heading">Experience</h2>
+        <div>
+          <div className="card">
+            <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>SWD/ML Intern</h3>
+            <h4 className="text-green mb-4">SecuQR India Pvt Ltd • Oct 2022 - Jan 2024</h4>
+            <ul style={{ color: 'var(--color-slate)' }}>
+              <li>Developed a Deep learning model for counterfeit QR code detection with 94% accuracy</li>
+              <li>Implemented web-scraping tool using BeautifulSoup4 for court case data analysis</li>
+              <li>Collaborated with teams to improve system efficiency and functionality</li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>Machine Learning Intern</h3>
+            <h4 className="text-green mb-4">Croatia Technologies • June 2023 - July 2023</h4>
+            <ul style={{ color: 'var(--color-slate)' }}>
+              <li>Developed CNN-based model for potato disease classification using PlantVillage dataset</li>
+              <li>Implemented data preprocessing, augmentation, and model optimization</li>
+              <li>Utilized TensorFlow and Keras for model training and optimization</li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>Machine Learning Intern</h3>
+            <h4 className="text-green mb-4">Energy7 • Present</h4>
+            <ul style={{ color: 'var(--color-slate)' }}>
+              <li>Working on Predictive Maintenance solutions for Indian Railways</li>
+              <li>Analyzing point machine time series data for maintenance optimization</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="work" className="px-6 py-20">
+        <h2 className="section-heading">Featured Projects</h2>
+        <div className="grid grid-2">
+          <div className="card">
+            <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>AI-Camera using Google Vision API</h3>
+            <p className="text-slate mb-4">AIoT / ML Project</p>
+            <ul style={{ color: 'var(--color-slate)' }}>
+              <li>Developed AI-powered camera with ESP32-CAM and PIR sensors</li>
+              <li>Achieved 94.67% accuracy in species identification</li>
+              <li>Implemented cloud connectivity for data processing</li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>SRM-GeoMaps</h3>
+            <p className="text-slate mb-4">Smart Campus Routing System</p>
+            <ul style={{ color: 'var(--color-slate)' }}>
+              <li>Developed Flask web application with Google Maps API integration</li>
+              <li>Implemented speech recognition and text-to-speech features</li>
+              <li>Created personalized navigation assistance system</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="bg-navy-light py-20 px-6">
+        <h2 className="section-heading">Get In Touch</h2>
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-slate mb-8">
+            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+          </p>
+          <div className="flex gap-6" style={{ justifyContent: 'center' }}>
+            <a href="mailto:ndeepesh2004@gmail.com" className="btn">
+              Email Me
+            </a>
+            <a href="https://github.com/gh-Deepesh-N" target="_blank" rel="noopener noreferrer" className="btn">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
