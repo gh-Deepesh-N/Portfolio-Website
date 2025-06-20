@@ -107,8 +107,16 @@ export default function Home() {
         <section id="work" className="px-6 py-20">
           <h2 className="section-heading">Featured Projects</h2>
           <div className="grid grid-2">
-            <div className="card">
-              <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>AI-Camera using Google Vision API</h3>
+            <div className="card" style={{ position: 'relative' }}>
+              <a href="https://github.com/gh-Deepesh-N/AI-CAM" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
+                <svg width="24" height="24" fill="none" stroke="var(--color-green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-green)' }}>AI-Camera using Google Vision API</h3>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '0.5rem 0' }}>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>ESP32-CAM</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Google Vision API</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Python</span>
+              </div>
               <p className="text-slate mb-4">AIoT / ML Project</p>
               <ul style={{ color: 'var(--color-slate)' }}>
                 <li>Developed AI-powered camera with ESP32-CAM and PIR sensors</li>
@@ -117,13 +125,65 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="card">
-              <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600 }}>SRM-GeoMaps</h3>
+            <div className="card" style={{ position: 'relative' }}>
+              <a href="https://github.com/gh-Deepesh-N/srm-intelli-route" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
+                <svg width="24" height="24" fill="none" stroke="var(--color-green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-green)' }}>SRM-Intelli-Route</h3>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '0.5rem 0' }}>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Flask</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Google Maps API</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Speech Recognition</span>
+              </div>
               <p className="text-slate mb-4">Smart Campus Routing System</p>
               <ul style={{ color: 'var(--color-slate)' }}>
                 <li>Developed Flask web application with Google Maps API integration</li>
                 <li>Implemented speech recognition and text-to-speech features</li>
                 <li>Created personalized navigation assistance system</li>
+              </ul>
+            </div>
+
+            {/* GreenPulse Project */}
+            <div className="card" style={{ position: 'relative' }}>
+              <a href="https://github.com/gh-Deepesh-N/greenpulse-Smart-EV-battery-health-monitoring-system" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
+                <svg width="24" height="24" fill="none" stroke="var(--color-green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-green)' }}>GreenPulse - Smart EV battery health monitoring system</h3>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '0.5rem 0' }}>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Python</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Node.js</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>MongoDB</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Gemini API</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Random Forest</span>
+              </div>
+              <p className="text-slate mb-4">AI/ML,Full Stack</p>
+              <ul style={{ color: 'var(--color-slate)' }}>
+                <li>AI-Powered EV Battery Health Monitoring: Developed a system using ML models (Random Forest Regressor) to predict battery SoH and provide personalized charging recommendations.</li>
+                <li>Chatbot Integration: Implemented a Gemini API-based personalized chatbot for real-time user queries on battery health, charging tips and EV maintenance issues with MongoDB for data retrieval.</li>
+                <li>Visualization Dashboard: Designed an interactive dashboard to display battery metrics and session data, providing users with maintenance alerts.</li>
+                <li>Battery Performance Optimization: Enabled users to track charging habits and extend battery life with actionable insights and recommendations.</li>
+              </ul>
+            </div>
+
+            {/* Files Encryption Tool Project */}
+            <div className="card" style={{ position: 'relative' }}>
+              <a href="https://github.com/gh-Deepesh-N/encrypt-terraform" target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', top: '1rem', right: '1rem' }}>
+                <svg width="24" height="24" fill="none" stroke="var(--color-green)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+              </a>
+              <h3 className="text-slate-lightest" style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-green)' }}>Files encryption tool using Terraform IaaC deployment</h3>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', margin: '0.5rem 0' }}>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Terraform</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>AWS EC2</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>GitHub Actions</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Flask</span>
+                <span style={{ background: 'rgba(100,255,218,0.07)', color: 'var(--color-green)', fontFamily: 'monospace', borderRadius: '0.5rem', padding: '0.25rem 0.75rem', fontSize: '1rem' }}>Security Groups</span>
+              </div>
+              <p className="text-slate mb-4">Cloud, DevOps, Security</p>
+              <ul style={{ color: 'var(--color-slate)' }}>
+                <li>Automated Infrastructure Deployment: Utilized Terraform to provision and manage AWS EC2 instances, security groups, and SSH key pairs, ensuring consistent infrastructure setup and efficient resource management.</li>
+                <li>Continuous Integration/Continuous Deployment (CI/CD): Implemented GitHub Actions to automate code deployment, integrating version control with AWS EC2, reducing manual interventions.</li>
+                <li>Infrastructure as Code (IaC): Employed Terraform for Infrastructure as Code, automating the provisioning of cloud resources and minimizing configuration drift, ensuring reproducible environments for application deployment.</li>
+                <li>Security and Compliance: Configured AWS security groups to allow controlled access to the Flask app, following best practices in cloud security by limiting SSH and HTTP access to trusted IPs and essential ports only.</li>
               </ul>
             </div>
           </div>
