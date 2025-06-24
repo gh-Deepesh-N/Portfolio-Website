@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <>
@@ -15,7 +13,7 @@ export default function Home() {
               I build AI & ML solutions.
             </h2>
             <p className="text-slate mb-8" style={{ maxWidth: '40rem' }}>
-              I'm a Computer Science Engineer specializing in AI and ML, passionate about leveraging technology to drive impactful solutions. 
+              I&apos;m a Computer Science Engineer specializing in AI and ML, passionate about leveraging technology to drive impactful solutions. 
               Currently focused on developing innovative machine learning models and intelligent systems.
             </p>
             <div className="flex gap-4">
@@ -31,13 +29,13 @@ export default function Home() {
           <div className="grid grid-2">
             <div className="text-slate">
               <p className="mb-4">
-                I'm a Computer Science Engineer with a specialization in AI and ML, currently pursuing my B.Tech at SRM University with an impressive CGPA of 9.55/10.
+                I&apos;m a Computer Science Engineer with a specialization in AI and ML, currently pursuing my B.Tech at SRM University with an impressive CGPA of 9.55/10.
               </p>
               <p className="mb-4">
                 My expertise spans across machine learning, software development, and IoT, with a particular focus on developing innovative solutions that make a real impact.
               </p>
               <p className="mb-4">
-                I'm passionate about leveraging cutting-edge technologies to solve complex problems and create intelligent systems that drive positive change.
+                I&apos;m passionate about leveraging cutting-edge technologies to solve complex problems and create intelligent systems that drive positive change.
               </p>
             </div>
             <div>
@@ -194,7 +192,7 @@ export default function Home() {
           <h2 className="section-heading">Get In Touch</h2>
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-slate mb-8">
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
             </p>
             <div className="flex gap-6" style={{ justifyContent: 'center' }}>
               <a href="mailto:ndeepesh2004@gmail.com" className="btn">
