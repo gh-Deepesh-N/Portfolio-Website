@@ -24,6 +24,24 @@
     background-color: var(--color-navy);
     color: var(--color-slate-lightest);
     font-family: var(--font-calibre);
+    background-image: url('/aigiffy.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 25, 47, 0.7); /* dark overlay for readability */
+    pointer-events: none;
+    z-index: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -47,8 +65,12 @@
     letter-spacing: 0.1em;
   }
 
-  .card {
-    @apply bg-navy-light p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-all duration-300 border border-navy-lightest text-slate-lightest;
+  .card, .section-box {
+    background: rgba(17,34,64,0.8) !important; /* semi-transparent navy for cards and section boxes */
+  }
+
+  .section-box {
+    background: rgba(35,53,84,0.7) !important; /* slightly lighter for section boxes */
   }
 
   .btn {
